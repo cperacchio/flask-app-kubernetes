@@ -1,8 +1,8 @@
 # Deploying a Flask API
 
-This is the project starter repo for the fourth course in the [Udacity Full Stack Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004): Server Deployment, Containerization, and Testing.
+This is the project repo for the fourth course in the [Udacity Full Stack Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004): Server Deployment, Containerization, and Testing.
 
-In this project you will containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
+This project involves containerizing and deploying a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
 
 The Flask app that will be used for this project consists of a simple API with three endpoints:
 
@@ -11,6 +11,12 @@ The Flask app that will be used for this project consists of a simple API with t
 - `GET '/contents'`: This requires a valid JWT, and returns the un-encrpyted contents of that token. 
 
 The app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.
+
+## Skills covered
+This project involves:
+- Container creation using Docker
+- Container orchestration with Kubernetes and AWS' Elastic Kubernetes Service (EKS)
+- Continuous integration and delivery with AWS' CodeBuild and CodePipeline
 
 ## Initial setup
 1. Fork this project to your Github account.
@@ -24,7 +30,7 @@ The app relies on a secret set as the environment variable `JWT_SECRET` to produ
  - AWS Account
      - You can create an AWS account by signing up [here](https://aws.amazon.com/#).
      
-## Project Steps
+## Project steps
 
 Completing the project involves several steps:
 
